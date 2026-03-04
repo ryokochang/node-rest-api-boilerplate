@@ -42,7 +42,7 @@ if (env.NODE_ENV !== 'test') {
       await connectDB();
       await connectRedis();
 
-      const port = env.PORT || 5000;
+      const port = env.PORT || 5001;
       app.listen(port, () => {
         logger.info(`Server running in ${env.NODE_ENV} mode on port ${port}`);
         logger.info(`API Docs available at http://localhost:${port}/api/v1/docs`);
